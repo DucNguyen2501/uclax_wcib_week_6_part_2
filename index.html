@@ -1,63 +1,75 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Week 5, Part 1</title>
+  <title>Week 6, Part 1</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        user-select: none;
+      }
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-  <body class="text-center">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Week 5, Part 1</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-          </nav>
-        </div>
-      </header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js" defer></script>
 
-      <main role="main" class="inner cover">
+<link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
 
-        <h1 class="cover-heading">Number guessing game</h1>
+</head>
 
-        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+<body class="text-center">
 
-        <div class="form">
-          <div class="form-group">
-            <label for="guessField">Enter a guess:</label>
-            <input type="text" class="form-control guessField" id="guessField" aria-describedby="emailHelp" placeholder="Enter a guess">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <img src="images/logo.png" width="100" alt="Voodoo-ranger-logo"/><a ></a>
+      </div>
+    </header>
+
+    <main class="inner-cover">
+      <h1 class="cover-heading">What are you waiting for?<br>Have a look on our new product and play a small game with us!</h1>
+      <p class="lead">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click Now</button>
+      </p>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" >
+            <div class="modal-body">
+            <img src="images/popup.png" class="image-fluid" alt="newbeer" width="400" id="getImage">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="imagefun()" value="Change Image">Explore more</button>
+            </div>
           </div>
-          <input type="submit" value="Submit guess" class="btn btn-primary guessSubmit">
         </div>
+      </div>
+    </main>
 
-        <div class="resultParas">
-          <p class="guesses"></p>
-          <p class="lastResult"></p>
-          <p class="lowOrHi"></p>
-        </div>
+    <footer class="mastfoot mt-auto">
+      <div class="inner">
+        <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      </div>
+    </footer>
+  </div>
+</body>
 
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div>
-      </footer>
-    </div>
-
-	</body>
-
-</html>
+  </html>
